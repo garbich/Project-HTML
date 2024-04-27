@@ -20,6 +20,10 @@ img {
   object-fit: cover;
 }
 
+section img {
+  width: 100%;
+}
+
 .section1 {
   position: relative;
   height: max-content;
@@ -146,20 +150,21 @@ button.button {
   letter-spacing: 0.17px;
 }
 
-.grid1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 500px;
-}
-
+.grid1,
 .grid2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 500px;
+  gap: 45px;
 }
 
 .grid.img {
   display: flex;
+}
+
+.content4_text1,
+.content4_text2,
+.content4_text3 {
+  margin: 0;
 }
 
 .content4 {
@@ -231,8 +236,6 @@ button.button {
   height: max-content;
   width: 100%;
   overflow: hidden;
-  display: grid;
-  align-items: center;
 }
 
 .section9_button {
@@ -258,7 +261,7 @@ button.button {
   align-items: center;
 }
 
-.section10_text1{
+.section10_text1 {
   color: white;
   font-size: 35.727px;
 
@@ -268,20 +271,36 @@ button.button {
   text-transform: uppercase;
 }
 
-.section11{
+.section11 {
   position: relative;
   height: max-content;
-  
-  overflow: hidden;
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  width: 100%;
+ 
 }
 
-.section11_text1{
+.section11_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+
+.content11 {
+  display: grid;
+  gap: 15px;
+  position: relative;
+  height: max-content;
+}
+
+.section11_content img {
+  z-index: -1;
+  position: absolute;
+}
+
+.section11_text1 {
   color: white;
 
-  
   font-size: 25.5px;
   font-style: normal;
   font-weight: 500;

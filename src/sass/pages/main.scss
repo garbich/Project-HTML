@@ -274,38 +274,34 @@ button.button {
 .section11 {
   position: relative;
   height: max-content;
-  width: 100%;
- 
-}
-
-.section11_content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  width: 100%;
-  height: max-content;
-}
-
-.content11 {
-  display: grid;
-  gap: 15px;
-  position: relative;
-  height: max-content;
-}
-
-.section11_content img {
-  z-index: -1;
-  position: absolute;
 }
 
 .section11_text1 {
   color: white;
-
   font-size: 25.5px;
-  font-style: normal;
   font-weight: 500;
   line-height: 46px;
   letter-spacing: 0.41px;
   text-transform: uppercase;
-  justify-content: left;
+}
+
+.content11_container {
+  display: flex;
+  gap: 30px;
+}
+
+.content11 {
+  position: relative;
+}
+
+.content11-info {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+
+  display: grid;
+}
+
+.main-end{
+  text-align: center;
 }
